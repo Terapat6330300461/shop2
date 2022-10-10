@@ -25,7 +25,7 @@ $sql="SELECT * FROM product";
 $result = mysqli_query($con,$sql);
 $numrow = mysqli_num_rows($result);
 echo "<h1>The Sims Shop</h1>";
-echo "มีจำนวนสินค้าทั้งหมดff ".$numrow." รายการ<br>";
+echo "มีจำนวนสินค้าทั้งหมด ".$numrow." รายการ<br>";
 echo "หน้า ".($_GET["page"]+1)."/".ceil($numrow/$per_page)."<br>";
 $prev = $_GET["page"]-1;
 $next = $_GET["page"]+1;
